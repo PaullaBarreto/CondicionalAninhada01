@@ -1,0 +1,26 @@
+package CondicionalAninhada01;
+
+import java.util.Scanner;
+
+public class CondicionalAninhada01 {
+
+    public static void main(String[] args) {
+        int nota;
+        int percentual;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite a nota do estudante: ");
+        nota = input.nextInt();
+        System.out.print("Digite o percentual de faltas: ");
+        percentual = input.nextInt();
+
+        if ((nota >= 70) && (percentual < 25)) {
+            System.out.println("O aluno foi aprovado");
+        }   else if (nota < 40) {
+            System.out.println("O aluno não foi aprovado");
+        }   else {
+            System.out.println("O aluno esta na recuperação");
+        }
+    }
+}
